@@ -57,6 +57,16 @@ If you double-clicked Otto and saw a warning dialog:
 2. Click the **Run anyway** button that appears at the bottom of the window.
 3. Follow the on-screen prompts to complete installation.
 
+### If Otto won't open on Windows
+
+Otto's voice input uses your graphics card through **Vulkan**, which comes with every up-to-date graphics driver. On a PC with no graphics driver installed (some virtual machines and very old or freshly reset PCs), Windows may report that **`vulkan-1.dll` was not found** and Otto won't start.
+
+To fix it, do either of these, then open Otto again:
+* **Update your graphics driver** from Windows Update, or from Intel, AMD or NVIDIA (recommended).
+* Or install the small **Vulkan Runtime** from [vulkan.lunarg.com/sdk/home](https://vulkan.lunarg.com/sdk/home) (under Windows, "Runtime").
+
+If it still won't open, tell us which PC and graphics card you have.
+
 ---
 
 ## Getting started (2 minutes)
@@ -91,6 +101,14 @@ Otto is the assistant in the bottom-right corner. Click it, or press **⌘J** (C
 - The other models (the larger GPT and Claude models) are **paid for by us**, so use them only when you really need to compare.
 - Each account has a monthly allowance; Otto will tell you if you reach it.
 - Let us know via Feedback if Otto does or says anything unexpected or incorrect
+
+### Speaking to Otto
+
+Press **⌘L** (Ctrl+L on Windows), or click the small microphone in Otto's box, and say what you want. Press Enter to stop; your words appear as text for you to check, and Enter again sends them.
+
+* The first time you open Otto it downloads a speech model once (about 870 MB) in the background; you'll see a small progress bar at the bottom of the sidebar. Voice input is ready when it finishes.
+* Your voice is turned into text **on your computer**. No audio is sent anywhere.
+* Your computer will ask once whether Otto may use the microphone. On these early unsigned Mac builds it may ask again after an update.
 
 ### 5. Tell us what breaks
 
